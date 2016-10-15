@@ -1,0 +1,8 @@
+<div style="margin: 10px;">
+    <h2 style="color:darkblue;">{{allpersons}}</h2>
+    <ul style="list-style-type: none">
+        <li ng-repeat="person in persons">
+            <div>{{person.name}} <a href="#/persondetail/{{$index}}">{{person.id}}</a></div>
+        </li>
+    </ul>
+</div>

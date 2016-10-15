@@ -1,0 +1,16 @@
+<div style="margin: 10px;" ng-controller="PersonCtrl as pctrl">
+    <h2 style="color:darkblue;">Create a new entry</h2>
+    <form name="personForm" ng-submit="pctrl.save()">
+        Name:
+        <input type="text" ng-model="pctrl.person.name"/>
+        <br/>
+        <br/>
+        Age:
+        <input type="number" ng-model="pctrl.person.age"/>
+        <br/>
+        <br/>
+        <input type="hidden" ng-model="pctrl.person.id" />
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
+
